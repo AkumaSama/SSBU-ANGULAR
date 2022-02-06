@@ -6,7 +6,7 @@ import {EditUniversComponent} from "./Pages/edit-univers/edit-univers.component"
 import {PersonnagesPageComponent} from "./Pages/personnages-page/personnages-page.component";
 
 const routes: Routes = [
-  { path: '', redirectTo: 'personnage', pathMatch: 'full'},
+  { path: '', redirectTo: 'univers', pathMatch: 'full'},
   { path: 'univers', component: UniversPageComponent },
   { path: 'personnage', component: PersonnagesPageComponent },
   { path: 'univers/:id', component: UniversShowComponent, pathMatch: 'full' },

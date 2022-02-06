@@ -20,7 +20,7 @@ export class PersonnageCardComponent implements OnInit {
 
   onClick(){
     this.onclickEmitter.emit(this.personnage?.id)
+
+
   }
-
-
 }

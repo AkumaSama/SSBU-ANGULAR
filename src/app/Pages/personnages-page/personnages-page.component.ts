@@ -24,5 +24,4 @@ export class PersonnagesPageComponent implements OnInit {
   personnageShowPage(idPersonnage: string){
     console.log(idPersonnage)
   }
-
 }
