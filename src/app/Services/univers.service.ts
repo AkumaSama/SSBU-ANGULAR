@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class UniversService {
 
 
-  private readonly apiLink = "https://api.capitaine-roger.fr/"
+  private readonly apiLink = "https://api-ssbu.theothierry.fr/"
 
   constructor(private httpClient: HttpClient) { }
 

@@ -6,10 +6,11 @@ import {EditUniversComponent} from "./Pages/edit-univers/edit-univers.component"
 import {PersonnagesPageComponent} from "./Pages/personnages-page/personnages-page.component";
 
 const routes: Routes = [
-  { path: "univers", component: UniversPageComponent },
-  { path: "personnage", component: PersonnagesPageComponent },
-  { path: "univers/:id", component: UniversShowComponent, pathMatch: 'full' },
-  { path: "univers/:id/edit", component: EditUniversComponent, pathMatch: 'full' }
+  { path: '', redirectTo: 'personnage', pathMatch: 'full'},
+  { path: 'univers', component: UniversPageComponent },
+  { path: 'personnage', component: PersonnagesPageComponent },
+  { path: 'univers/:id', component: UniversShowComponent, pathMatch: 'full' },
+  { path: 'univers/:id/edit', component: EditUniversComponent, pathMatch: 'full' }
 ];
 
 @NgModule({

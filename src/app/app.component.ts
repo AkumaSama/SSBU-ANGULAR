@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import Univers from "src/app/Type/Univers"
-import { UniversService } from "src/app/Services/univers.service"
 
 @Component({
   selector: 'app-root',
@@ -10,7 +7,7 @@ import { UniversService } from "src/app/Services/univers.service"
 })
 export class AppComponent {
 
-  title = 'angular-demo';
+  title = 'Super Smash Bross Ultimate';
 
   constructor(){}
 }

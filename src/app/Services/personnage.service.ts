@@ -8,7 +8,7 @@ import Personnage from "../Type/Personnage";
 })
 export class PersonnageService {
 
-  private readonly apiLink = "https://api.capitaine-roger.fr/"
+  private readonly apiLink = "https://api-ssbu.theothierry.fr/"
 
   constructor(private httpClient: HttpClient) { }
 
