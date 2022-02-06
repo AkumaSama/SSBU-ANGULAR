@@ -1,0 +1,18 @@
+<div class="d-flex flex-wrap justify-content-center">
+  <personnage-card *ngFor="let personnage of personnages" [personnage]="personnage" (onclickEmitter)="personnageShowPage($event)"></personnage-card>
+</div>
+
+
+<!---
+<div *ngFor="let i of ['lucina','mario','donkey_kong','link','samus','yoshi','kirby','luigi','bowser','peach']" class="card m-2 shadow-lg" style="width: 45%">
+  <div class="card-header">
+    <h1 class="text-center">Je suis une carte incroyable</h1>
+  </div>
+  <div class="card-body d-flex justify-content-center bg-dark">
+    <img style="height: 200px" src="{{'https://www.smashbros.com/assets_v2/img/fighter/' + i + '/ss_movie1_en.jpg'}}" />
+  </div>
+  <div class="card-footer d-flex justify-content-center">
+    <button class="btn btn-success" [routerLink]="['/univers']" > Plus d'info </button>
+  </div>
+</div>
+-->

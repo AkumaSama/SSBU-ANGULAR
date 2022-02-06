@@ -1,0 +1,12 @@
+<div *ngIf="univers != null" class="d-flex flex-column align-items-center">
+  <h1 class="text-center">{{univers.nom}}</h1>
+  <div class="d-flex">
+    <button [routerLink]="['/univers']" class="btn btn-primary m-1" style="width: 125px">Retour</button>
+    <button [routerLink]="['/univers', univers.id, 'edit']" class="btn btn-warning m-1" style="width: 125px">Modifier</button>
+    <button class="btn btn-danger m-1" style="width: 125px">Supprimer</button>
+  </div>
+  <img class="w-75 m-auto" src="{{univers.linkImage}}" />
+  <div class="d-flex flex-wrap justify-content-center">
+    <personnage-card *ngFor="let personnage of personnages" [personnage]="personnage"></personnage-card>
+  </div>
+</div>
