@@ -23,11 +23,11 @@ export class UniversService {
   }
 
   getUnivers(): Observable<Univers[]> {
-    return this.httpClient.get<Univers[]>(this.apiLink + "univers/", this.getHeaders())
+    return this.httpClient.get<Univers[]>(this.apiLink + "univers")
   }
 
   getUniver(univerId:string): Observable<Univers> {
-    return this.httpClient.get<Univers>(this.apiLink + "univers/" + univerId + "", this.getHeaders())
+    return this.httpClient.get<Univers>(this.apiLink + "univers/" + univerId + "")
   }
 
   modifyUnivers(univerId: string, data: UniversModification): Observable<Univers>{
